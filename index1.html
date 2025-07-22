@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Ramrithik Chirra</title>
+</head>
+<style>
+  * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+h2, h3 {
+  color: rgb(255, 172, 18);
+}
+
+body {
+  font-family:  sans-serif;
+  background-color: rgb(15, 15, 15);
+  color: white;
+  line-height: 1.6;
+}
+
+a {
+  color: rgb(33, 171, 225);
+  
+}
+
+header {
+  background-color: #1e1e1e;
+  padding: 1rem 2rem;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+nav h1 {
+  color: rgb(208, 141, 16);
+}
+
+nav ul {
+  display: flex;
+  list-style: none;
+}
+
+nav ul li {
+  margin-left: 20px;
+}
+
+nav ul li a {
+  color:rgb(215, 168, 24);
+  font-weight: 600;
+}
+
+.hero {
+  text-align: center;
+  padding: 4rem 2rem;
+  background-color: rgb(36, 36, 36);
+  color: white;
+}
+
+.section {
+  padding: 2rem;
+  background-color: rgb(26, 25, 25);
+  margin: 1rem;
+  border-radius: 10px;
+}
+
+.skills-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+  list-style: none;
+  justify-content: center;  
+  padding: 0;
+  margin-top: 1rem;
+}
+.skills-list li {
+  background-color: rgb(41, 146, 188);
+  color: white;
+  padding: 0.5rem 1rem;
+  border-radius: 5px;
+  font-weight: bold;
+}
+
+
+.projects {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.project-card {
+  background-color: rgb(39, 39, 39);
+  padding: 1rem;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.3);
+  flex: 1 1 30%;
+}
+
+.contact-section {
+  margin: 2rem auto;
+  max-width: 800px;
+  background-color: rgb(22, 22, 22);
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgb(20, 20, 20);
+}
+
+.contact-container {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.contact-info {
+  text-align: center;
+  font-size: 1rem;
+}
+
+.contact-info p {
+  margin: 0.5rem 0;
+}
+
+.contact-info i {
+  margin-right: 10px;
+  color: skyblue;
+}
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.contact-form label {
+  font-weight: 600;
+  color: white;
+}
+
+.contact-form input,
+.contact-form textarea {
+  padding: 0.75rem;
+  background-color: rgb(35, 35, 35);
+  color:white;
+  border: 1px solid grey;
+  border-radius: 6px;
+  font-size: 1rem;
+}
+
+.contact-form button {
+  align-self:center;
+  background-color: rgb(29, 150, 198);
+  color: white;
+  padding: 0.75rem 1.5rem;
+  border: none;
+  border-radius: 6px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.contact-form button:hover {
+  background-color: rgb(36, 167, 220)
+}
+
+footer {
+  background-color: rgb(30, 30, 30);
+  color: white;
+  text-align: center;
+  padding: 1rem;
+  margin-top: 2rem;
+}
+
+footer a {
+  color: orange
+}
+
+</style>
+<body>
+  <header>
+    <nav>
+      <h1>Ramrithik Chirra</h1>
+      <ul class="colour">
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#education">Education</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <h2>Hello, I'm Ramrithik</h2>
+    <p>cse student and interesting in machine learning and web development</p>
+  </section>
+
+  <section id="about" class="section">
+    <h2 style="text-align: center;">About Me</h2>
+    <p>I am a Computer Science student at Amrita Vishwa Vidyapeetham (Amritapuri), interested about AI/ML, web development.</p>
+  </section>
+
+  <section id="skills" class="section">
+    <h2 style="text-align:center">Skills</h2>
+    <ul class="skills-list">
+      <li> HTML</li>
+      <li> CSS</li>
+      <li>Python</li>
+      <li> Machine Learning</li>
+      <li>Java</li>
+    </ul>
+  </section>
+  <section id="projects" class="section">
+    <h2 style="text-align: center;">Projects</h2>
+    <br>
+    <div class="projects">
+      <div class="project-card">
+        <h3>Spam email dectector</h3>
+        <p>Created a ML project for dectecting spam emails using labeled data </p>
+      </div>
+      <div class="project-card">
+        <h3>recipe finder</h3>
+        <p> Used html,css and js to bulid the recipefinder  </p>
+      </div>
+      <div class="project-card">
+        <h3>Book Browser</h3>
+        <p>Java app that uses Google Books API to search and save favorite books in JSON</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact" class="section contact-section">
+  <h2 style="text-align: center;">Contact Me</h2>
+  <div class="contact-container">
+    <div class="contact-info">
+      <p style="text-align: center";>ramrithikchirra@gmail.com</p>
+      <p style="text-align: center"> 6302834956</p>
+      <p style="text-align: center;">Telangana</p>
+    </div>
+
+    <form class="contact-form">
+      <label for="name"> Your Name</label>
+      <input type="text" id="name" placeholder="Enter your name" required />
+
+      <label for="email"> Your Email</label>
+      <input type="email" id="email" placeholder="Enter your email" required />
+
+      <label for="message"> Your Message</label>
+      <textarea id="message" rows="5" placeholder="Write your message here..." required></textarea>
+
+      <button type="submit">Send Message</button>
+    </form>
+  </div>
+</section>
+
+  <footer>
+    <p>© 2025 Ramrithik Chirra | <a href="https://github.com/Ramrithik" target="_blank">GitHub</a> | <a href="https://www.linkedin.com/in/ramrithik-chirra-79b7a8320/" target="_blank">LinkedIn</a></p>
+  </footer>
+</body>
+</html>
